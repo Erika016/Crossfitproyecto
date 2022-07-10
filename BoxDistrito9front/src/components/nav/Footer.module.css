@@ -1,0 +1,72 @@
+.footer{
+    width: 100vw;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-top: 1px solid var(--dark);
+    margin: 0;
+    padding: 1em 2em;
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    font-family: fredoka;
+    font-size: 1.4rem;
+    /* min-width: 50%; */
+}
+.nombre{
+font-size: 2.3em;
+font-family: wallpoet;
+}
+
+.direccion{
+float: left;
+}
+/* .logo{
+    max-width: 180px;
+    height: auto;
+    padding: 1.5em;
+} */
+.redes {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    max-width: 50px;
+    font-size: 40px;
+    cursor: pointer;
+    padding: 1.8em;
+    margin: 1em;
+  }
+  
+  .insta {
+    margin: 0.5em;
+  }
+.face:hover{
+    font-size: 1.5em;
+    color: blue;
+}
+.insta:hover{
+    font-size: 1.5em;
+    color: orange;
+}
+.what:hover{
+    font-size: 1.5em;
+    color: greenyellow;
+}
+
+@media (max-width: 1750px) {
+  
+    .redes{
+        flex-direction: column;
+        max-width: 50px;
+        font-size: 2rem;
+        cursor: pointer;
+        padding-left: 1.5em;
+        margin: .5em;
+        float: right;
+        transition: all 2s ease;
+    }
+    .insta {
+        margin: 0.1em;
+      }
+  }

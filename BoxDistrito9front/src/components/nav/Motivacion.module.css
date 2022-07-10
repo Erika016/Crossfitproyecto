@@ -1,0 +1,23 @@
+.container{
+    width: 100vw;
+    height: auto;
+    text-align: center;
+    font-family: fredoka;
+    font-size: 1.5em;
+}
+.container h1{
+    font-size: 2.5em;
+    font-family: wallpoet;
+}
+.container hr{
+    color: black;
+}
+.container p{
+    width: 100%;
+    text-align: left;
+    padding: 2em 6em 2em 10em;
+    justify-content: center;
+}
+.container h3{
+    padding-bottom: 1em;
+}

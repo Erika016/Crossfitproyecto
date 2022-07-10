@@ -1,0 +1,30 @@
+.containerHome {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.actividades {
+  font-size: 2.5em;
+  font-family:cursive;
+  text-align: center;
+  animation: over-and-back 1.5s linear infinite;
+}
+@keyframes over-and-back {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(50px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+.cards {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}

@@ -1,0 +1,77 @@
+.container {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100vw;
+  margin:0;
+  height: auto;
+}
+
+.texto{
+  padding: 1em;
+  text-align: center;
+  animation: over-and-back 2.5s linear infinite;
+
+}
+@keyframes over-and-back {
+  0% {
+    transform: translate(0);
+  }
+  50% {
+    transform: translate(50px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.titulo {
+  font-size: 2em;
+  font-family: fredoka;
+  text-align: center;
+  font-family: Wallpoet;
+}
+
+.tarifa {
+  width: 100vw;
+  max-width: 850px;
+  border-collapse: separate;
+  margin: 0px auto;
+  padding: 2rem 4rem;
+
+}
+.tarifa2 {
+  width: 100vw;
+  max-width: 1900px;
+  border-collapse: separate;
+  margin: 0px auto;
+  padding: 2rem 4rem;
+
+}
+th,
+td {
+  font-size: 2em;
+  border: solid 2px #eee;
+  padding: 8px;
+  text-align: center;
+}
+th {
+  background-color:brown;
+}
+tr:nth-child(odd) {
+  background-color: #eee;
+}
+
+@media (max-width: 576px){
+  .texto{
+    text-align: center;
+    font-size: 0.3em;
+
+  }
+}
+@media (max-width: 900px){
+  .texto{
+    text-align: center;
+    font-size: 1em;
+  }
+}

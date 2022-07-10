@@ -1,0 +1,11 @@
+.imagen {
+  width: 100vw;
+  height:800px;
+  align-items: center;
+  
+}
+/* @media (min-width: 900px) {
+  .imagen {
+    background-image: url="../Crossfitmoti.jpg";
+  }
+} */

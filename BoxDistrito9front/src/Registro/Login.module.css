@@ -1,0 +1,103 @@
+.container{
+  display: inline;
+  flex-direction:row;
+  width: 100vw;
+  min-height: 70vh;
+  font-family: "fredoka";
+  padding:4em 0em;
+  margin: 5em;
+
+}
+/* login card */
+.titulo{
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 1.5em;
+  text-align: center;
+  background-color: #eee;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px grey;
+}
+
+.titulo h1 {
+  font-family: "wallpoet";
+  text-align: center;
+  color: black;
+  padding-bottom: .5em;
+}
+
+form{
+  display:flex;
+  flex-direction:column;
+  justify-content: center;
+
+}
+.label{
+  margin-top: 1em;
+  margin-bottom: 1em;
+  text-align:left;
+  font-size: 2em;
+ 
+}
+
+.formulario{
+  padding: 12px 25px;
+  border-radius: 5px,
+}
+.registro{
+  padding: 1em;
+  margin-bottom: 1em;
+  font-size: 1.8rem;
+  color: red;
+}
+.registro:hover{
+  transition: (0.075, 0.82, 0.165, 1); 
+  font-size: 2.5em;
+  text-shadow: 0 0.9rem 2rem rgba(0,0,0,2);
+ text-decoration: none;
+}
+
+
+.click{
+  text-decoration: none;
+  border: 2px grey solid;
+  border-radius: 5%;
+  color: white;
+  background-color: darkgrey;
+}
+.click:hover{
+  box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,3);
+}
+.button{
+  margin-top: 0.5em;
+  width: 100%;
+  padding: 8px 4px;
+  border-radius: 5px;
+  background-color: dimgray;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: bold;
+  border: 0;
+  cursor: pointer;
+}
+.button:hover{
+  box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,3);
+}
+/* breakpoints */
+@media (min-width: 768px) {
+  .titulo{
+      max-width: 50%;
+  }
+}
+@media ( min-width: 992px) {
+  .titulo{max-width: 45%;}
+}
+@media ( min-width: 1200px) {
+  .titulo{max-width: 40%;}
+  .click:hover{
+      transform: scale(1.4);
+      transition:all .2s ease-in-out;
+  }
+}

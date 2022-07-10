@@ -1,0 +1,43 @@
+.container {
+  width: 100%;
+  height: auto;
+  border: 2px #eee solid;
+  display: block;
+  justify-content: center;
+  text-align: center;
+  padding: 2rem;
+}
+.titulo{
+    font-family: wallpoet;
+}
+.container h1{
+    font-size: 3em;
+}
+.container label {
+  color: brown;
+  font-size: 2.5em;
+}
+.container p{
+    font-size: 1.8em;
+    padding: .5em;
+}
+.imagen{
+    width: 780px;
+    height: 540px;
+    padding-top: 2em;
+}
+
+@media (max-width: 576px){
+  .imagen{
+    max-width: 320px;
+    max-height: 300px;
+
+  }
+}
+@media (max-width: 900px){
+  .imagen{
+    max-width: 460px;
+    max-height: 400px;
+
+  }
+}

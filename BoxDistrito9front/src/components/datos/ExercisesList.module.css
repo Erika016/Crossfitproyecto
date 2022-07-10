@@ -1,0 +1,34 @@
+/* .containerListExercise{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.listExercises{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(209, 200, 200, 0.404);
+    cursor: pointer;
+    margin: 1rem 0 1rem 0;
+}
+
+.nameExercises{
+    width: 100%;
+    margin: 1rem 0 1rem 0;
+}
+
+.exerciseDatas{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: white;
+    margin-top: 2rem;
+} */

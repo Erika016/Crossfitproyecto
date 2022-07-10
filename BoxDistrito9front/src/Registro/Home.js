@@ -1,3 +1,6 @@
+// Componente de la pagina de inicio de la aplicacion.
+// Component of the application's home page.
+
 import { Fragment } from "react";
 import {Motivacion} from "../components/nav/Motivacion"
 import { Cards } from "../components/Cards/Cards";

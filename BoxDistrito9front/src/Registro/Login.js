@@ -1,3 +1,6 @@
+// Componente para iniciar sesion el usuario
+// Component to login the user
+
 import { useDispatch, useSelector } from "react-redux";
 import { signIn } from "../store/loginSlice";
 import { Link } from "react-router-dom";

@@ -1,3 +1,7 @@
+
+// Component that shows all the exercises registered in the database and their description.
+// Componente que muestra todos los ejercicios registrados en la base de datos y su descripción.
+
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import classes from "./Exercises.module.css";

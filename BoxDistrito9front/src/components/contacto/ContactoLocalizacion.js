@@ -1,3 +1,6 @@
+// Component to display contact and location data.
+// Componente para mostrar los datos de contactos y localización.
+
 import classes from "./ContactoLocalizacion.module.css";
 import ubi from "../info/imagenInfo/ubi.png";
 

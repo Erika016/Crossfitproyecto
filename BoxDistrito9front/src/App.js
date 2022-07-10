@@ -1,3 +1,6 @@
+// Component centralizes all routing of the application.
+// Componente centraliza todos los enrutados de la aplicacion.
+
 import { Routes, Route, Navigate } from "react-router-dom";
 import Home from "./Registro/Home";
 import { Login } from "./Registro/Login";
@@ -10,8 +13,6 @@ import { UserDetails } from "./Registro/UserDetails";
 import { Exercises } from "./components/datos/Exercises";
 import { SeccionCrossfit } from "./components/info/SeccionCrossfit.js";
 import { Fragment } from "react";
-
-// import { Footer } from "./components/nav/Footer";
 import { SeccionBoxeo } from "./components/info/SeccionBoxeo";
 import SeccionFisio from "./components/info/SeccionFisio";
 import { ContactoLocalizacion } from "./components/contacto/ContactoLocalizacion";

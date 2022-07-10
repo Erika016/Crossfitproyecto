@@ -1,3 +1,7 @@
+
+// Props to send the user an alert, for example successful registration.
+// Props para mandar al usuario una alerta, por ejemplo registro correcto.
+
 import styles from "./Alert.module.css";
 
 export const Alert = (props) => {

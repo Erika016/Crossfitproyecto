@@ -1,9 +1,10 @@
+// En este componente encontramos una pequeña descripción de lo que es el BOXEO, sus beneficios y los malos mitos sobre este entrenamiento.
+// In this component we find a short description of what CROSSFIT is, its benefits and the bad myths about this training.
+
 import classes from "./SeccionBoxeo.module.css";
 import boxeo1 from "../info/imagenInfo/boxeo1.jpg";
 import { Link } from "react-router-dom";
 
-// En este componente encontramos una pequeña descripción de lo que es el CROSSFIT, sus beneficios y los malos mitos sobre este entrenamiento.
-// In this component we find a short description of what CROSSFIT is, its benefits and the bad myths about this training.
 export function SeccionBoxeo() {
   return (
       <div className={classes.container}>

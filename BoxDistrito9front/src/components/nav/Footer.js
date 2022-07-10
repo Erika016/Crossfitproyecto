@@ -1,3 +1,6 @@
+// component that shows the footer of the application
+// componente que muestra el pie de pagina de la aplicacion
+
 import { Fragment } from "react";
 import classes from "./Footer.module.css";
 import { ImFacebook2 } from "react-icons/im";

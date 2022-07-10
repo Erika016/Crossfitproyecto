@@ -1,3 +1,7 @@
+
+// Component in charge of registering new users.
+// Componente encargado del registro de nuevos usuarios.
+
 import classes from "./Register.module.css";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";

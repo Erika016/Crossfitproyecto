@@ -1,3 +1,6 @@
+// componente que muestra todos los usuarios
+// component showing all users
+
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 

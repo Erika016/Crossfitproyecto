@@ -45,7 +45,9 @@ export const signIn = createAsyncThunk(
     }
   }
 );
-// Esta parte es para probar modificacion del perfil de usuario
+// This part is to test the modification of the user profile
+// Esta parte es para probar la  modificacion del perfil de usuario 
+
 export const updateUser = createAsyncThunk(
   "login/updateProfile",
   async (data, { rejectWithValue }) => {

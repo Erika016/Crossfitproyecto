@@ -1,3 +1,6 @@
+// componente que muestra los detalles de los usuarios
+// component that shows the details of the users
+
 import { useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 

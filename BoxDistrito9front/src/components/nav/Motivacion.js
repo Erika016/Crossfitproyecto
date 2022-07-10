@@ -1,4 +1,8 @@
+// Componente en el que se le muestra una pequeña introducción de lo que ofecen en Box Distrito9.
+// Component that shows a small introduction of what they offer in Box Distrito9.
+
 import classes from "./Motivacion.module.css"
+
 export function Motivacion(props) {
   return (
         <div className={classes.container}>

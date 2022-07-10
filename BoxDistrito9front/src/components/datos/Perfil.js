@@ -1,3 +1,6 @@
+// Component to update the profile data of the registered user.
+// Componente para actualizar los datos del perfil del usuario registrado.
+
 import classes from "./Perfil.module.css";
 import { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";

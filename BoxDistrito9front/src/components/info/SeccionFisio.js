@@ -1,3 +1,6 @@
+// In this component we find a short description of the activity of imparting the physiotherapist center
+// En este componente encontramos una pequeña descripción de la actividad de impartir el centro de fisioterapeuta
+
 import fisio1 from "../info/imagenInfo/fisio1.jpg";
 import classes from "./SeccionFisio.module.css";
 import { Link } from "react-router-dom";

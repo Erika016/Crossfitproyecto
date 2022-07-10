@@ -1,5 +1,7 @@
+// En este componente encontramos una pequeña descripción de lo que es el CROSSFIT, sus benefi
+// En este componente encontramos una pequeña descripción de lo que es el CROSSFIT, sus beneficios
+
 import classes from "./SeccionCrossfit.module.css";
-// import logo from "../info/imagenInfo/logo.PNG"
 import Rosa from "../info/imagenInfo/Rosa.JPG"
 import { Link } from "react-router-dom";
 

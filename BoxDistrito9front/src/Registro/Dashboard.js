@@ -1,3 +1,6 @@
+// componente que muestra la paginal principal a usuario registrado.
+// component that shows the main page to the registered user.
+
 import classes from "./Dashboard.module.css";
 import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";

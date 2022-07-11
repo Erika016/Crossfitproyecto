@@ -39,22 +39,22 @@ export const Login = (props) => {
     });
   };
   return (
-    <div className={classes.center}>
+    <div >
       {logged && <Navigate to="/dashboard" replace={true} />}
       {loading && <Spinner />}
       {status === "failed" && <Alert message="Error en el registro" />}
 
       {!loading && (
-        <div className={classes.container}>
-          <div className={classes.titulo}>
-            <h1>BOX DISTRITO9</h1>
-            <h2>Iniciar Sesion</h2>
-            <form onSubmit={handleSubmit}>
-              <label className={classes.label} htmlFor="email">
+        <div >
+            {/* <h1 >BOX DISTRITO9</h1> */}
+            <h2 className={classes.titulo}>Iniciar Sesion</h2>
+          <div className={classes.login}>
+            <form className={classes.contactform} onSubmit={handleSubmit}>
+              <label className={classes.labels} htmlFor="email">
                 Email
               </label>
               <input
-                className={classes.formulario}
+                className={classes.user}
                 id="email"
                 type="email"
                 name="email"
@@ -62,11 +62,11 @@ export const Login = (props) => {
                 placeholder="Email"
                 onChange={handleInputChange}
               />
-              <label className={classes.label} htmlFor="password">
+              <label className={classes.labels} htmlFor="password">
                 Password
               </label>
               <input
-                className={classes.formulario}
+                className={classes.password}
                 id="password"
                 type="password"
                 name="password"
@@ -76,12 +76,12 @@ export const Login = (props) => {
               />
 
               <div>
-                <Link className={classes.registro} to="/register">
+                <Link className={classes.links} to="/register">
                   ¿No estás registrado?
                 </Link>
               </div>
               <div>
-                <button type="submit" className={classes.button}>
+                <button type="submit" className={classes.boton}>
                   Acceder
                 </button>
               </div>

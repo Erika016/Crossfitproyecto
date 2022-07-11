@@ -1,4 +1,135 @@
-.container{
+
+.login {
+  font-family: wallpoet;
+  margin-top: -30px;
+    font-size: 35px;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 230px;
+    flex-wrap: nowrap;
+  
+  }
+  .titulo{
+    text-align: center;
+  font-size: 30px;
+ } 
+
+  .links{
+    padding: 1em;
+    margin-bottom: 1em;
+    font-size: 1.8rem;
+    color: red;
+  }
+  .links:hover{
+    width: 100%;
+    transition: (0.075, 0.82, 0.165, 1); 
+    font-size: 2.5em;
+    text-shadow: 0 0.9rem 2rem rgba(0,0,0,2);
+   text-decoration: none;
+   }
+ 
+  
+  .labels{
+    display: flex;
+    justify-content: center;
+    color:black;
+    font-size: 35px;
+  }
+
+  .user{
+    padding: 10px;
+    border-radius: 8px;
+    background: blue;
+  }
+ .user::placeholder{
+  color: black;
+font-size: 15px;
+background:blue;
+  }
+  .password{ padding: 10px;
+    border-radius: 8px;
+    background: blue;
+  }
+ .password::placeholder{
+  color: black;
+font-size: 15px;
+background: blue;
+  }
+
+.boton{
+  cursor: pointer;
+  background: gainsboro;
+  padding: 10px;
+  border-radius: 8px;
+  margin-left: 15px;
+  }
+  .boton:hover{
+    transition: all 0.5s ease;
+    background: blue;
+  }
+  .default {
+    margin-bottom: 251px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+        }
+  .contactform{
+  width: 30%;
+  padding: 1.5em 1em;
+          border-radius: 0.3rem;
+          font-size: 1.2rem;
+        }
+  .contactform input,
+  .contactform textarea,
+  .contactform button {
+  
+    resize: none;
+    width: 100%;
+    padding: .5rem .3rem;
+    margin: 1em 0 0;
+    border-radius: 0.3rem;
+    font-size: 1.5rem;
+  }
+  @media only screen and (max-width: 768px) {
+    .default {
+      display: flex;
+      width: 80%;
+ }
+ .contactform{
+   width: 80%;
+   padding: 1.5em 1em;
+           border-radius: 0.3rem;
+           font-size: 1.2rem;
+         }
+ .contactform input,
+ .contactform textarea,
+ .contactform button {
+ 
+  font-size: 15px;
+   resize: none;
+   width: 100%;
+   padding: .5rem .3rem;
+   margin: 1em 0 0;
+   border-radius: 0.3rem;
+   font-size: 1.5rem;
+ }
+ .links{
+  padding: 1em;
+  margin-bottom: 1em;
+  font-size: 1.8rem;
+  color: red;
+}
+
+  .titulo{
+    text-align: center;
+  font-size: 30px;
+ } 
+    }
+
+
+/* .container{
   display: inline;
   flex-direction:row;
   width: 100vw;
@@ -8,7 +139,7 @@
   margin: 5em;
 
 }
-/* login card */
+
 .titulo{
   justify-content: center;
   align-items: center;
@@ -85,7 +216,7 @@ form{
 .button:hover{
   box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,3);
 }
-/* breakpoints */
+
 @media (min-width: 768px) {
   .titulo{
       max-width: 50%;
@@ -100,4 +231,4 @@ form{
       transform: scale(1.4);
       transition:all .2s ease-in-out;
   }
-}
+} */

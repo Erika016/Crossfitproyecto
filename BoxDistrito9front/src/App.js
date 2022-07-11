@@ -18,9 +18,9 @@ import SeccionFisio from "./components/info/SeccionFisio";
 import { ContactoLocalizacion } from "./components/contacto/ContactoLocalizacion";
 // import { AddWeigth } from "./components/datos/AddWeight";
 import { Perfil } from "./components/datos/Perfil";
-import { DeleteWeigth } from "./components/datos/DeleteWeigth";
+// import { DeleteWeigth } from "./components/datos/DeleteWeigth";
 
-import { SearchWeigth } from "./components/datos/SearchWeight";
+import { SearchWeight } from "./components/datos/SearchWeight";
 
 function App() {
   return (
@@ -36,13 +36,12 @@ function App() {
           element={<ContactoLocalizacion />}
         />
         <Route path="/exercises" element={<Exercises />} />
-        {/* <Route path="/addWeigth" element={<AddWeigth />} /> */}
-        <Route path="/deleteWeigth" element={<DeleteWeigth />} />
+        {/* <Route path="/deleteWeigth" element={<DeleteWeigth />} /> */}
         <Route path="/perfil" element={<Perfil />} />
         <Route path="/seccionCrossfit" element={<SeccionCrossfit />} />
         <Route path="/seccionBoxeo" element={<SeccionBoxeo />} />
         <Route path="/seccionFisio" element={<SeccionFisio />} />
-        <Route path="/searchWeigth" element={<SearchWeigth />} />
+        <Route path="/searchWeight" element={<SearchWeight />} />
 
         <Route path="/users">
           <Route index element={<Users />} />

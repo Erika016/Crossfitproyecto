@@ -14,12 +14,12 @@ router.post('/insertUser', controlador.insertUser);
 //Modificar un usuario
 //Modify a user
 
-router.put('/updateUser', verifyToken, controlador.updateUser);
+router.put('/updateUser/:id', verifyToken, controlador.updateUser);
 
 //Perfil del usuario
 //User profile
 
-router.get('/userProfile/:id_User', controlador.userProfile);
+router.get('/userProfile/:id', controlador.userProfile);
 
 //Mostrar los usuarios
 // show users

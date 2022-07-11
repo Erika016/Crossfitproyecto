@@ -1,5 +1,13 @@
-.contenedor{
-    margin-bottom: 2rem;
+.searchContainer{
+    margin: 2rem 0 2rem 0;
+}
+
+.formSearch{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
 }
 
 .searchExer{
@@ -13,8 +21,8 @@
 
 .titleSearch{
     width: 100%;
-    height: 4rem;
-    text-align: center;
+    height: 2.5rem;
+    text-align: left;
     color: black;
 }
 

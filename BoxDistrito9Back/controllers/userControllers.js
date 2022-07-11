@@ -15,8 +15,8 @@ class UserController {
    * @memberof UserController
    */
 
-   async insertUser(req, res) {
-    console.log(req.body)
+  async insertUser(req, res) {
+    console.log(req.body);
     const name = req.body.name;
     const last_name = req.body.last_name;
     const birth_date = req.body.birth_date;
@@ -25,19 +25,29 @@ class UserController {
     const sessions = req.body.sessions;
     const photo = req.body.photo;
     const rol = req.body.rol;
-    const password  = await bcrypt.hash(req.body.password, 10);
-     dbMysql.query(
+    const password = await bcrypt.hash(req.body.password, 10);
+    dbMysql.query(
       "INSERT INTO users (name, last_name, birth_date, phone, email, sessions, photo, rol, password) VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)",
-      [name, last_name, birth_date, phone, email, sessions, photo, rol, password],
+      [
+        name,
+        last_name,
+        birth_date,
+        phone,
+        email,
+        sessions,
+        photo,
+        rol,
+        password,
+      ],
       (error, rows) => {
-        if (error){
-        res.json({
+        if (error) {
+          res.json({
             status: "failed",
             data: rows,
             error: error.message,
-          })
-        };
-        console.log(rows)
+          });
+        }
+        console.log(rows);
         res.json({
           status: "succedeed",
           data: rows,
@@ -57,7 +67,6 @@ class UserController {
    */
 
   updateUser(req, res) {
-    console.log("req", req.body);
     const { id_User } = req.body;
     const { name } = req.body;
     const { last_name } = req.body;
@@ -67,21 +76,31 @@ class UserController {
     const { photo } = req.body;
     const { rol } = req.body;
     const { password } = req.body;
+    const { birth_date } = req.body;
     dbMysql.query(
-      "UPDATE users SET name = ?, last_name = ?, phone = ?,email = ?, sessions = ?, photo = ?, rol = ?, password = ? WHERE id_User = ?",
-      [name, last_name, phone, email, sessions, photo, rol, password, id_User],
+      "UPDATE users SET name = ?, last_name = ?, phone = ?,email = ?, sessions = ?, photo = ?, rol = ?, password = ?, birth_date = ? WHERE id_User = ?",
+      [name, last_name, phone, email, sessions, photo, rol, password, birth_date, id_User],
       (error, rows) => {
-        if (error)
-          console.log({
+        if (error) {
+          res.json({
             status: "failed",
-            data: rows,
+            data: "Error updating user",
             error: error.message,
           });
-        res.json({
-          status: "succedeed",
-          data: rows,
-          error: null,
-        });
+        }
+        if (rows.affectedRows === 1) {
+          res.json({
+            status: "succedeed",
+            data: req.body,
+            error: null,
+          });
+        } else {
+          res.json({
+            status: "failed",
+            data: "Error updating user",
+            error: error.message,
+          });
+        }
       }
     );
   }

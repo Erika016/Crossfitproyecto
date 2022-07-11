@@ -53,13 +53,12 @@ export const updateUser = createAsyncThunk(
   async (data, { rejectWithValue }) => {
     try {
       // console.log(baseURL + "/users/updateUser/" + data._id);
-      // console.log(data)
-      const response = await fetch(baseURL + "/users/" + data.id_User, {
+      const response = await fetch(baseURL + "/users/updateUser/" + data.id_User, {
         method: "PUT",
         body: JSON.stringify(data),
         headers: {
           "Content-Type": "application/json",
-          authorization: "Bearer " + "token",
+          "authorization": "Bearer " + data.token,
         },
       });
       return response.json();
@@ -113,7 +112,8 @@ export const loginSlice = createSlice({
       state.status = "loading";
     },
     [updateUser.fulfilled]: (state, action) => {
-      state.login.data = action.payload;
+      // console.log(action.payload);
+      state.login.data.info = action.payload.data;
       state.login.loading = false;
       state.status = "succeeded";
     },

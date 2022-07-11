@@ -58,7 +58,7 @@ export const Dashboard = () => {
             </div>
             <div>
               <Link className={classes.buttons} to={"/searchWeight"}>
-                Registrar Pesos de los Ejercicios
+                Registrar Pesos Ejercicios
               </Link>
             </div>
             <div>

@@ -2,18 +2,20 @@ import classes from "./SearchWeight.module.css"
 import { useState } from "react";
 import { Link } from "react-router-dom";
 import { ExercisesList } from "./ExercisesList";
-// import { DefaultMessage } from "../commons/DefaultMessage";
+import { DefaultMessage } from "../commons/DefaultMessage";
 
 //Mostrar los pesos con ese usuario e id del ejercicio
 //Show the weights with that user and exercise id
 
-export const SearchWeigth = () => {
+export const SearchWeight = () => {
 
 
  const [searchStatus, setSearchStatus] = useState({
   hasExercises: false
 })  
 const [exercises, setExercises] = useState([]);
+
+const [inputValue, setValue] = useState('');
 
 var arrayExercises = [
   {
@@ -22,9 +24,9 @@ var arrayExercises = [
     description: ""
 }
 ]; 
-
   const getExercises = (e) => {
     if(e && e !== ''){
+      setValue(e);
     fetch("http://localhost:8000/exercises/searchExercises/"+ e, {
       method: "GET",
       headers: {
@@ -40,12 +42,15 @@ var arrayExercises = [
             hasExercises: true
           })
         } else {
+          arrayExercises = [];
+          setExercises(arrayExercises)
           setSearchStatus ({
             hasExercises: false
           }) 
         }
       });
     } else {
+      setValue('');
       setSearchStatus ({
         hasExercises: false
       }) 
@@ -53,9 +58,8 @@ var arrayExercises = [
   };
 
   return (
-    <div className={classes.contenedor}>
-      <div className={classes.datos}>
-{/* Buscador de ejercicios */}
+    <div className={classes.searchContainer}>
+      <div className={classes.formSearch}>
           <div className={classes.searchExer}>
             <div className={classes.titleSearch}>
           <h2>Buscar ejercicios</h2>
@@ -68,13 +72,10 @@ var arrayExercises = [
               onChange={(event) => getExercises(event.target.value)}
             />
             <div className={classes.containerListExercises}>
-            {arrayExercises.length > 0 && searchStatus.hasExercises && <ExercisesList exercises={exercises}/>}
-            {/* {arrayExercises.length === 0 && <DefaultMessage message="No hay resultados de la búsqueda"/>} */}
+            {exercises.length > 0 && searchStatus.hasExercises && <ExercisesList exerciseName={inputValue} exercises={exercises}/>}
+            {exercises.length === 0 && !searchStatus.hasExercises && inputValue && <DefaultMessage message="No hay resultados de la búsqueda"/>}
             </div>
           </div>
-          {/* <div className={classes.button}>
-            <button onClick={getExercises(event.target.value)}>Buscar</button>
-          </div> */}
       </div>
       <li><Link to="/dashboard">Volver</Link></li>
     </div>

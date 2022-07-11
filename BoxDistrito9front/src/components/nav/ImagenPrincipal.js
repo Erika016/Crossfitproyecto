@@ -8,7 +8,7 @@ export function ImagenPrincipal (){
 return(
     <div>
         <div className={classes.divImage}>
-                  {/* <img className={classes.imagen} alt="test" src={fondo} /> */}
+                  <img className={classes.imagen} alt="test" src={fondo} />
         </div>
     </div>
 )

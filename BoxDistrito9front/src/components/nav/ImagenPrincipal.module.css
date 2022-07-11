@@ -1,23 +1,23 @@
-.divImage{
+/* .divImage{
   width: 100%;
   height: 40rem;
   background-image: url("../info/imagenInfo/foto.jpg");
   background-size: 100% 80%;
   background-repeat: no-repeat;
   background-position: -10%;
-}
+} */
 
 .imagen {
-  /* background-size: cover;
+  background-size: contain;
   width: 100%;
-  height:40rem; */
-  /* align-items: center;
+  height:auto; 
+  align-items: center;
   margin-top: 4em;
-  padding-bottom: 4em; */
+  padding-bottom: 4em;
   
 }
-/* @media (min-width: 900px) {
+ @media (min-width: 900px) {
   .imagen {
     background-image: url="../Crossfitmoti.jpg";
-  }
-} */
+  } 
+}

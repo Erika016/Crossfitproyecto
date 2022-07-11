@@ -27,7 +27,10 @@ function Header() {
 
   return (
     <header className={classes.container}>
+      <div className={classes.containerLogo}>
       <img className={classes.logo} alt="test" src={logo} />
+      </div>
+      <div className={classes.containerNav}>
       <nav>
         <ul>
           <li>
@@ -51,7 +54,7 @@ function Header() {
           <li>{logged && <Link to={"/dashboard"}>Area Usuario</Link>}</li>
         </ul>
       </nav>
-
+      </div>
       <div className={classes.redes}>
         <div className={classes.face}>
           <ImFacebook2 />

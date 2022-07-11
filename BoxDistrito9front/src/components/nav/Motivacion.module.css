@@ -1,10 +1,14 @@
 .container{
-    width: 100vw;
-    height: auto;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
     text-align: center;
+    justify-content: center;
     font-family: fredoka;
     font-size: 1.5em;
 }
+
 .container h1{
     font-size: 2.5em;
     font-family: wallpoet;
@@ -12,11 +16,20 @@
 .container hr{
     color: black;
 }
-.container p{
+
+.textExplain{
     width: 100%;
+    height: 100%;
+    display: flex;
     text-align: left;
-    padding: 2em 6em 2em 10em;
-    justify-content: center;
+    padding: 0 5% 0 5% !important;
+}
+.textExplain p {
+    margin: 1rem;
+}
+
+.secundaryText{
+padding: 0 1.2rem 0 1.2rem
 }
 .container h3{
     padding-bottom: 1em;

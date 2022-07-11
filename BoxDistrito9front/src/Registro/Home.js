@@ -14,9 +14,12 @@ import classes from "./Home.module.css";
 function Home(){
     return(
         <Fragment>
-            <Motivacion/>
-            <h2 className={classes.actividades}>ACTIVIDADES</h2>
             <div className={classes.containerHome}>
+            <Motivacion/>
+            <div className={classes.containerActivities}>
+            <h2 className={classes.actividades}>ACTIVIDADES</h2>
+            </div>
+            <div className={classes.containerCards}>
                 <div className={classes.cards}>
                 <Cards
                 imagenUrl={Crossfit}
@@ -39,6 +42,7 @@ function Home(){
                 />
                 </div>
 
+            </div>
             </div>
         </Fragment>
     )

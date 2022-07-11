@@ -1,101 +1,106 @@
-.contenedor{
-    width: 100vw;
-    min-height: 75vh;
-    font-family: "fredoka";
-    padding:2em;
+.contenedor {
+  width: 100%;
+  height: auto;
+  font-family: "fredoka";
+  padding: 2em;
 }
-.datos{
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin:auto;
-    padding: 1.5em;
-    text-align: center;
-    background-color: #eee;
-    border-radius: 5px;
-    box-shadow: 3px 3px 5px grey;
+.datos {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  padding: 1.5em;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 3px 3px 5px grey;
 }
-.datos h1{
-    font-family: "wallpoet";
-    text-align: center;
-    color: black;
-    padding-bottom: .5em;
+.titulo {
+  font-family: "fredoka";
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 0.5em;
 }
 
-form{
-    display:flex;
-    flex-direction:column;
-    justify-content: center;
+form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
-.columna{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
-    padding: 1em;
+.columna {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  padding: 1em;
 }
-.primero{
-    display: flex;
-    flex-direction: column;
-    margin-right: .5em;
+.primero {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.5em;
 }
-.segundo{
-    display: flex;
-    flex-direction: column;
-    margin-right: .5em
+.segundo {
+  display: flex;
+  flex-direction: column;
+  margin-right: 0.5em;
 }
-label{
-    margin-top: 1em;
-    margin-bottom: 1em;
-    text-align:left;
-    font-size: 1.5rem;
+
+.label {
+  display: flex;
+  font-family: wallpoet;
+  justify-content: center;
+  color: black;
+  font-size: 35px;
 }
-input{
-    padding: 12px 25px;
-    border-radius: 5px,
+.user {
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  background: blue;
 }
-select{
-    text-align: center;
-    font-family: "Hind Madurai";
-    padding: .25em;
-    font-size: 1.5rem;
-    
+.user::placeholder {
+  color: black;
+  font-size: 15px;
+  background: blue;
 }
-.button{
-    margin-top: 0.5em;
-    width: 100%;
-    padding: 8px 4px;
-    border-radius: 5px;
-    background-color: dimgray;
-    font-size: 1.6rem;
-    color: white;
-    font-weight: bold;
-    border: 0;
-    cursor: pointer;
-  }
-  .button:hover{
-    box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,3);
-  }
+
+.button {
+  margin-top: 0.5em;
+  width: 100%;
+  padding: 8px 4px;
+  border-radius: 5px;
+  background-color: gainsboro;
+  font-size: 1.6rem;
+  color: white;
+  font-weight: bold;
+  border: 0;
+  cursor: pointer;
+}
+.button:hover {
+  box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 3);
+}
 /* breakpoints */
-@media (max-width: 630px){
-    .columna{
-        flex-direction: column;
-    }
+@media (max-width: 630px) {
+  .columna {
+    flex-direction: column;
+  }
 }
 @media (min-width: 768px) {
-    .primero{
-        max-width: 80%;
-    }
-    .primero{
-        margin-right:.5em;
-    }
-    .segundo{
-        margin-left:.5em;
-    }
+  .primero {
+    max-width: 80%;
+  }
+  .primero {
+    margin-right: 0.5em;
+  }
+  .segundo {
+    margin-left: 0.5em;
+  }
 }
-@media ( min-width: 992px) {
-    .primero{max-width: 65%;}
+@media (min-width: 992px) {
+  .primero {
+    max-width: 65%;
+  }
 }
-@media ( min-width: 1200px) {
-    .primero{max-width: 60%;}
-
+@media (min-width: 1200px) {
+  .primero {
+    max-width: 60%;
+  }
 }

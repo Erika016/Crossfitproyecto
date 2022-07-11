@@ -75,8 +75,8 @@ export const Login = (props) => {
                 value={formValues.password}
               />
 
-              <div>
-                <Link className={classes.links} to="/register">
+              <div className={classes.links}>
+                <Link  to="/register">
                   ¿No estás registrado?
                 </Link>
               </div>

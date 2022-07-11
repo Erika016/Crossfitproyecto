@@ -1,234 +1,126 @@
-
 .login {
   font-family: wallpoet;
   margin-top: -30px;
-    font-size: 35px;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 230px;
-    flex-wrap: nowrap;
-  
-  }
-  .titulo{
-    text-align: center;
+  font-size: 35px;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 230px;
+  flex-wrap: nowrap;
+}
+/* .titulo {
+  font-family: "fredoka";
+  text-align: center;
   font-size: 30px;
- } 
+} */
+.titulo {
+  padding: 1em;
+  font-family: "fredoka";
+  font-size: 30px;
+  text-align: center;
+  padding-bottom: 0.5em;
+}
 
-  .links{
-    padding: 1em;
-    margin-bottom: 1em;
-    font-size: 1.8rem;
-    color: red;
-  }
-  .links:hover{
-    width: 100%;
-    transition: (0.075, 0.82, 0.165, 1); 
-    font-size: 2.5em;
-    text-shadow: 0 0.9rem 2rem rgba(0,0,0,2);
-   text-decoration: none;
-   }
- 
-  
-  .labels{
-    display: flex;
-    justify-content: center;
-    color:black;
-    font-size: 35px;
-  }
+.links {
+  padding: 1em;
+  font-size: 1.8rem;
+  color: red;
+  align-items: center;
+  text-decoration: none;
 
-  .user{
-    padding: 10px;
-    border-radius: 8px;
-    background: blue;
-  }
- .user::placeholder{
+}
+.links:hover {
+  width: 100%;
+  transition: (0.075, 0.82, 0.165, 1);
+  font-size: 1.5em;
+  text-shadow: 0 0.9rem 2rem rgba(0, 0, 0, 2);
+  text-decoration: none;
+}
+
+.labels {
+  display: flex;
+  justify-content: center;
   color: black;
-font-size: 15px;
-background:blue;
-  }
-  .password{ padding: 10px;
-    border-radius: 8px;
-    background: blue;
-  }
- .password::placeholder{
-  color: black;
-font-size: 15px;
-background: blue;
-  }
+  font-size: 35px;
+}
 
-.boton{
+.user {
+  padding: 10px;
+  color: white;
+  border-radius: 8px;
+  background: blue;
+}
+.user::placeholder {
+  color: black;
+  font-size: 15px;
+  background: blue;
+}
+.password {
+  padding: 10px;
+  color: white;
+  border-radius: 8px;
+  background: blue;
+}
+.password::placeholder {
+  color: black;
+  font-size: 15px;
+  background: blue;
+}
+
+.boton {
   cursor: pointer;
   background: gainsboro;
   padding: 10px;
   border-radius: 8px;
   margin-left: 15px;
-  }
-  .boton:hover{
-    transition: all 0.5s ease;
-    background: blue;
-  }
-  .default {
-    margin-bottom: 251px;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-        }
-  .contactform{
+}
+.boton:hover {
+  transition: all 0.5s ease;
+  background: blue;
+}
+
+.contactform {
   width: 30%;
   padding: 1.5em 1em;
-          border-radius: 0.3rem;
-          font-size: 1.2rem;
-        }
+  border-radius: 0.3rem;
+  font-size: 1.2rem;
+}
+.contactform input,
+.contactform textarea,
+.contactform button {
+  resize: none;
+  width: 100%;
+  padding: 0.5rem 0.3rem;
+  margin: 1em 0 0;
+  border-radius: 0.3rem;
+  font-size: 1.5rem;
+}
+@media only screen and (max-width: 768px) {
+  
+  .contactform {
+    width: 80%;
+    padding: 1.5em 1em;
+    border-radius: 0.3rem;
+    font-size: 1.2rem;
+  }
   .contactform input,
   .contactform textarea,
   .contactform button {
-  
+    font-size: 15px;
     resize: none;
     width: 100%;
-    padding: .5rem .3rem;
+    padding: 0.5rem 0.3rem;
     margin: 1em 0 0;
     border-radius: 0.3rem;
     font-size: 1.5rem;
   }
-  @media only screen and (max-width: 768px) {
-    .default {
-      display: flex;
-      width: 80%;
- }
- .contactform{
-   width: 80%;
-   padding: 1.5em 1em;
-           border-radius: 0.3rem;
-           font-size: 1.2rem;
-         }
- .contactform input,
- .contactform textarea,
- .contactform button {
- 
-  font-size: 15px;
-   resize: none;
-   width: 100%;
-   padding: .5rem .3rem;
-   margin: 1em 0 0;
-   border-radius: 0.3rem;
-   font-size: 1.5rem;
- }
- .links{
-  padding: 1em;
-  margin-bottom: 1em;
-  font-size: 1.8rem;
-  color: red;
-}
+  .links {
+    padding: 1em;
+    font-size: 1.8rem;
+    color: red;
+  }
 
-  .titulo{
+  .titulo {
     text-align: center;
-  font-size: 30px;
- } 
-    }
-
-
-/* .container{
-  display: inline;
-  flex-direction:row;
-  width: 100vw;
-  min-height: 70vh;
-  font-family: "fredoka";
-  padding:4em 0em;
-  margin: 5em;
-
-}
-
-.titulo{
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  margin: auto;
-  padding: 1.5em;
-  text-align: center;
-  background-color: #eee;
-  border-radius: 5px;
-  box-shadow: 3px 3px 5px grey;
-}
-
-.titulo h1 {
-  font-family: "wallpoet";
-  text-align: center;
-  color: black;
-  padding-bottom: .5em;
-}
-
-form{
-  display:flex;
-  flex-direction:column;
-  justify-content: center;
-
-}
-.label{
-  margin-top: 1em;
-  margin-bottom: 1em;
-  text-align:left;
-  font-size: 2em;
- 
-}
-
-.formulario{
-  padding: 12px 25px;
-  border-radius: 5px,
-}
-.registro{
-  padding: 1em;
-  margin-bottom: 1em;
-  font-size: 1.8rem;
-  color: red;
-}
-.registro:hover{
-  transition: (0.075, 0.82, 0.165, 1); 
-  font-size: 2.5em;
-  text-shadow: 0 0.9rem 2rem rgba(0,0,0,2);
- text-decoration: none;
-}
-
-
-.click{
-  text-decoration: none;
-  border: 2px grey solid;
-  border-radius: 5%;
-  color: white;
-  background-color: darkgrey;
-}
-.click:hover{
-  box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,3);
-}
-.button{
-  margin-top: 0.5em;
-  width: 100%;
-  padding: 8px 4px;
-  border-radius: 5px;
-  background-color: dimgray;
-  font-size: 1.6rem;
-  color: white;
-  font-weight: bold;
-  border: 0;
-  cursor: pointer;
-}
-.button:hover{
-  box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,3);
-}
-
-@media (min-width: 768px) {
-  .titulo{
-      max-width: 50%;
+    font-size: 30px;
   }
 }
-@media ( min-width: 992px) {
-  .titulo{max-width: 45%;}
-}
-@media ( min-width: 1200px) {
-  .titulo{max-width: 40%;}
-  .click:hover{
-      transform: scale(1.4);
-      transition:all .2s ease-in-out;
-  }
-} */

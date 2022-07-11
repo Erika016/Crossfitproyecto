@@ -6,7 +6,7 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { Spinner } from "../components/spinner/Spinner";
 import { Navigate } from "react-router-dom";
-import perfil from "../components/info/imagenInfo/perfil.png"
+import perfil from "../components/info/imagenInfo/perfil1.jpeg"
 
 export const Dashboard = () => {
   const user = useSelector((state) => state.login.login.data.info);

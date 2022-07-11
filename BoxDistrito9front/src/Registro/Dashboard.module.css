@@ -1,5 +1,5 @@
 .container{
-  width: 100vw;
+  width: 100%;
   height: auto;
   display: flex;
   flex-direction: column;
@@ -21,9 +21,6 @@
   align-items: center;
   flex-wrap: wrap;
   margin: 1em 3em 1em 3em;
-  border: 4px solid black;
-  border-radius: 6px;
-
 }
 
 .dates{
@@ -40,25 +37,11 @@
   margin: 0.3em 0 0.3em 0;
 }
 
-/* .butMod{
-  width: 50%;
-  height: 1.6em;
-  border: 1px solid black;
-  border-radius: 2px;
-  color: white;
-  margin: auto;
-  margin-top: 1em;
-  margin-bottom: 1em;
-  cursor: pointer;
-  text-align: center;
-  color: white;
-  background-color: rgb(26, 77, 157);
-} */
 
 
 .buttons{
-  width: 50%;
-  height: 1.6em;
+  width: 100%;
+  height: auto;
   border: 1px solid black;
   border-radius: 5px;
   color: white;
@@ -68,7 +51,7 @@
   cursor: pointer;
   text-align: center;
   color: white;
-  background-color: darkgray;
+  background-color: blue;
   width: 100%;
   display: flex;
   justify-content: center;
@@ -121,8 +104,9 @@
 }
 
 .buttons{
-  width: 50%;
-  height: 2em;
+  display: flex;
+  width: 100%;
+  height: auto;
   border: 1px solid black;
   border-radius: 5px;
   color: white;
@@ -131,7 +115,7 @@
   cursor: pointer;
   text-align: center;
   color: white;
-  background-color:darkgrey;
+  background-color:blue;
 }
 .buttons:hover{
   box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,3);

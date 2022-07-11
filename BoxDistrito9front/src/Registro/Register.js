@@ -56,15 +56,15 @@ export const Register = () => {
       {status === "succeeded" && <Alert message="Registro correcto" />}
       {status === "failed" && <Alert message="Error en el registro" />}
       <div className={classes.datos}>
-        <h1>BOX DISTRITO9</h1>
-        <h2>Registrarse</h2>
+        {/* <h1>BOX DISTRITO9</h1> */}
+        <h2 className={classes.titulo}>Registrarse</h2>
         <form onSubmit={handleOnSubmit}>
           <div className={classes.columna}>
             <div className={classes.primero}>
-              <label htmlFor="first_name">Name</label>
+              <label className={classes.label} htmlFor="first_name">Nombre</label>
               <input
                 id="name"
-                className={classes.Name}
+                className={classes.user}
                 type="text"
                 name="name"
                 value={formValues.name}
@@ -72,10 +72,10 @@ export const Register = () => {
                 required
                 onChange={handleInputChange}
               />
-              <label htmlFor="last_name">Last Name</label>
+              <label className={classes.label} htmlFor="last_name">Apellidos</label>
               <input
                 id="last_name"
-                className={classes.lastName}
+                className={classes.user}
                 type="text"
                 name="last_name"
                 value={formValues.last_name}
@@ -83,9 +83,9 @@ export const Register = () => {
                 required
                 onChange={handleInputChange}
               />
-              <label htmlFor="birth_date">Birth Date</label>
+              <label className={classes.label} htmlFor="birth_date">Fecha Nacimiento</label>
               <input
-                className={classes.birth}
+                className={classes.user}
                 id="birth_date"
                 type="date"
                 name="birth_date"
@@ -94,9 +94,9 @@ export const Register = () => {
                 onChange={handleInputChange}
                 value={formValues.birth_date}
               />
-              <label htmlFor="phone">Phone</label>
+              <label className={classes.label} htmlFor="phone">Teléfono</label>
               <input
-                className={classes.phone}
+                className={classes.user}
                 id="phone"
                 type="text"
                 name="phone"
@@ -106,9 +106,9 @@ export const Register = () => {
               />
             </div>
             <div className={classes.segundo}>
-              <label htmlFor="email">Email</label>
+              <label className={classes.label} htmlFor="email">Email</label>
               <input
-                className={classes.email}
+                className={classes.user}
                 id="email"
                 type="email"
                 name="email"
@@ -118,9 +118,9 @@ export const Register = () => {
                 onChange={handleInputChange}
               />
 
-              <label htmlFor="sessions">sessions</label>
+              <label className={classes.label} htmlFor="sessions">Sesiones</label>
               <input
-                className={classes.sessions}
+                className={classes.user}
                 id="sessions"
                 type="text"
                 name="sessions"
@@ -129,9 +129,9 @@ export const Register = () => {
                 onChange={handleInputChange}
                 value={formValues.sessions}
               />
-              <label htmlFor="photo">Photo</label>
+              <label className={classes.label} htmlFor="photo">Foto</label>
               <input
-                className={classes.photo}
+                className={classes.user}
                 id="photo"
                 type="file"
                 name="photo"
@@ -139,9 +139,9 @@ export const Register = () => {
                 onChange={handleInputChange}
                 value={formValues.photo}
               />
-              <label htmlFor="password">Password</label>
+              <label className={classes.label} htmlFor="password">Contraseña</label>
               <input
-                className={classes.password}
+                className={classes.user}
                 id="password"
                 type="password"
                 name="password"

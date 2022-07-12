@@ -7,7 +7,8 @@ import ubi from "../info/imagenInfo/ubi.png";
 export function ContactoLocalizacion() {
   return (
     <div className={classes.container}>
-      <p className={classes.titulo}>BOX DISTRITO9</p>
+      <div className={classes.containerContactInfo}>
+      <h1 className={classes.titulo}>BOX DISTRITO9</h1>
       <hr />
       <h1>Contacto y Lozalización</h1>
       <p>
@@ -30,7 +31,8 @@ export function ContactoLocalizacion() {
         Boxeo.
         <br /> Fisioterapeuta en el propio centro.
       </p>
-      <div>
+      </div>
+      <div className={classes.imagenContainer}>
         <img className={classes.imagen} alt="test" src={ubi} />
       </div>
     </div>

@@ -55,8 +55,9 @@ li {
     .imagen{
       max-width: 220px;
       max-height: 300px;
-      
-  
+    }
+    .container {
+      font-size: 1rem; 
     }
   }
   @media (max-width: 900px){

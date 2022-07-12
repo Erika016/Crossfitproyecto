@@ -4,14 +4,16 @@ import { CgGym } from "react-icons/cg";
 export function TarifasHorarios() {
   return (
     <div className={classes.container}>
+      <div>
       <h1 className={classes.texto}>
         <GiBiceps /> Ven y comprueba que puedes hacerlo <GiBiceps /> que no te
         lo cuenten.
         <CgGym />
       </h1>
-
+      </div>
+      <div className={classes.tarifa}>
       <h2 className={classes.titulo}>TARIFAS</h2>
-      <table className={classes.tarifa}>
+      <table >
         <tbody>
           <tr>
             <th>Tarifa</th>
@@ -39,9 +41,10 @@ export function TarifasHorarios() {
           </tr>
         </tbody>
       </table>
-
+      </div>
+      <div className={classes.tarifa2}>
       <h2 className={classes.titulo}>HORARIOS</h2>
-      <table className={classes.tarifa2}>
+      <table >
         <tbody>
           <tr>
             <th>DIA</th>
@@ -85,6 +88,7 @@ export function TarifasHorarios() {
           </tr>
         </tbody>
       </table>
+      </div>
     </div>
   );
 }

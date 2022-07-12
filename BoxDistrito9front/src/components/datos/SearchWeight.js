@@ -77,7 +77,9 @@ var arrayExercises = [
             </div>
           </div>
       </div>
-      <li><Link to="/dashboard">Volver</Link></li>
+      <div className={classes.botonContainer}>
+          <Link className={classes.boton} to="/dashboard">Volver</Link>
+      </div>
     </div>
   );
 };

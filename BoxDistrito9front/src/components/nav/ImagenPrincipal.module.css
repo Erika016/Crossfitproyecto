@@ -7,17 +7,12 @@
   background-position: -10%;
 } */
 
-.imagen {
-  background-size: contain;
+.divImage {
   width: 100%;
-  height:auto; 
+  height: 17rem; 
+  background-color: white;
   align-items: center;
-  margin-top: 4em;
   padding-bottom: 4em;
   
 }
- @media (min-width: 900px) {
-  .imagen {
-    background-image: url="../Crossfitmoti.jpg";
-  } 
-}
+

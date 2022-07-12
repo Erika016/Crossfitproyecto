@@ -1,49 +1,110 @@
 .container{
-    width: 100vw;
-    height: 100%;
-    background-image: url(../info/imagenInfo/menu.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    width: 100%;
     display: flex;
+    flex-direction: column;
+    /* background-image: url(../info/imagenInfo/menu.jpg);
+    background-repeat: no-repeat; */
 }
 
-.bloque{
-    justify-content: center;
-    margin: 2em 2em 2em 8em;
+.imageContainer{
+  width: 100%;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  background-image: url(../info/imagenInfo/menu.jpg);
+  background-repeat: no-repeat;
 }
+
+.imageContainer h1{
+  color: white;
+  margin-top: 2rem;
+  margin-left: 2rem;
+}
+.containerLi{
+  display: flex;
+  justify-content: center;
+  margin: 2em;
+}
+
 .li {
   list-style-type: none;
 }
-.nombre {
-  font-size: 3.5em;
-  padding: 2em;
+.name {
+  font-size: 2rem;
+  display: flex;
   justify-content: center;
   text-align: center;
   color: brown;
 }
-.descripcion {
-    width: 70%;
-  font-size: 2em;
-  margin-left: 8em;
-  padding-left: 2em;
+.description {
+  width: 100%;
+  font-size: 1.3rem;
   justify-content: center;
   text-align: center;
-  border: 2px #fff solid;
-  color: white;
 }
+
+.botonContainer{
+  width: 100%;
+  display: flex;
+    justify-content: right;
+    align-items: right;
+    margin: 3.5em 2em 1.5rem 0;
+  padding: 0.5rem 1rem
+}
+
 .boton{
     text-decoration: none;
-    margin-top: 0.5em;
-    width: 100%;
-    padding: 8px 6px;
     border-radius: 5px;
     background-color: dimgray;
-    font-size: 1.6rem;
+    font-size: 1.3rem;
     color: white;
     font-weight: bold;
     border: 0;
     cursor: pointer;
+    padding: 1rem;
   }
   .boton:hover{
     box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,3);
+  } 
+
+  @media (min-width: 700px) and (max-width: 1024px) { 
+  
+  .imageContainer{
+    background-size: cover;
+  }
+  
+  .name {
+    font-size: 2.4rem;
+  }
+  .description {
+    font-size: 1.8rem;
+  }
+  
+  .boton{
+      font-size: 1.5rem;
+    }
+    .boton:hover{
+      box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,3);
+    }
+  }
+
+  @media (min-width: 1024px) {
+    .imageContainer{
+      height: 20rem;
+      background-size: cover;
+    }
+    
+    .name {
+      font-size: 2.4rem;
+    }
+    .description {
+      font-size: 1.8rem;
+    }
+    
+    .boton{
+        font-size: 1.5rem;
+      }
+      .boton:hover{
+        box-shadow: 0 0.1rem 0.4rem rgba(0,0,0,3);
+      }
   }

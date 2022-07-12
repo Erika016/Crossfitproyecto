@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
-  width: 100vw;
+  width: 100%;
   margin:0;
   height: auto;
 }
@@ -10,47 +10,51 @@
 .texto{
   padding: 1em;
   text-align: center;
+  font-size: 1.2rem;
   animation: over-and-back 2.5s linear infinite;
 
 }
 @keyframes over-and-back {
   0% {
-    transform: translate(0);
+    transform: translate(-10px);
   }
   50% {
-    transform: translate(50px);
+    transform: translate(0);
   }
   100% {
-    transform: translate(0);
+    transform: translate(-10px);
   }
 }
 
 .titulo {
-  font-size: 2em;
+  font-size: 1.4rem;
   font-family: fredoka;
   text-align: center;
   font-family: Wallpoet;
 }
 
 .tarifa {
-  width: 100vw;
-  max-width: 850px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
   border-collapse: separate;
-  margin: 0px auto;
-  padding: 2rem 4rem;
+  margin: 0;
+  padding: 2rem;
 
 }
 .tarifa2 {
-  width: 100vw;
-  max-width: 1900px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  width: 100%;
   border-collapse: separate;
-  margin: 0px auto;
-  padding: 2rem 4rem;
-
+  margin: 0px;
+  padding: 2rem;
 }
 th,
 td {
-  font-size: 2em;
+  font-size: 1em;
   border: solid 2px #eee;
   padding: 8px;
   text-align: center;
@@ -61,17 +65,76 @@ th {
 tr:nth-child(odd) {
   background-color: #eee;
 }
-
-@media (max-width: 576px){
+@media (min-width: 700px) and (max-width: 1024px) { 
   .texto{
+    padding: 1em;
     text-align: center;
-    font-size: 0.3em;
+    font-size: 1.6rem;
+    animation: over-and-back 2.5s linear infinite;
+  }
 
+  @keyframes over-and-back {
+    0% {
+      transform: translate(-15px);
+    }
+    50% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(-15px);
+    }
+  }
+
+  .titulo {
+    font-size: 1.8rem;
+  }
+
+  td {
+    font-size: 1.4rem;
+    border: solid 2px #eee;
+    padding: 8px;
+    text-align: center;
   }
 }
-@media (max-width: 900px){
+
+@media (min-width: 1024px) {
   .texto{
+    padding: 1em;
     text-align: center;
-    font-size: 1em;
+    font-size: 2rem;
+    animation: over-and-back 2.5s linear infinite;
+  }
+
+  @keyframes over-and-back {
+    0% {
+      transform: translate(-20px);
+    }
+    50% {
+      transform: translate(0);
+    }
+    100% {
+      transform: translate(-20px);
+    }
+  }
+
+  .titulo {
+    font-size: 2rem;
+  }
+
+  .tarifa {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    border-collapse: separate;
+    margin: 0;
+    padding: 2rem 5rem;
+  }
+
+  td {
+    font-size: 1.8rem;
+    border: solid 2px #eee;
+    padding: 8px;
+    text-align: center;
   }
 }

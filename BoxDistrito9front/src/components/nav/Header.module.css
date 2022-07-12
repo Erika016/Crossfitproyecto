@@ -1,32 +1,49 @@
-@media (max-width: 700px) {
+
 .container {
   width: 100%;
+  height: auto;
+  position: sticky;
   position: fixed;
-  /* height: 20vh; */
+  /* margin-top: 0; */
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  background-color: black;
+  flex-direction: column;
   font-size: 1.5em;
-
   color: white;
-  margin-bottom: 1.2em;
-  /* padding: 2em; */
-  
-  z-index: 1000
+  z-index: 1000;
+  background-image: url(../info/imagenInfo/backgrooundHeader.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-top: -1rem;
 }
 
-.container nav ul {
+.containerLogo{
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  justify-content: left;
+  align-items: left;
 }
-.container nav li {
+.logo {
+  width: 6rem;
+  height: auto;
+  margin: 1.5rem 0 0 2rem;
+}
+
+.containerNav{
+  display: flex;
+  flex-direction: column;
+}
+
+.containerNav nav ul {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: -2.5em;
+}
+.containerNav nav li {
   list-style-type: none;
   padding: 0.6em;
-  font-size: 1.4rem;
+  font-size: 1rem;
 }
-.container nav li a {
+.containerNav nav li a {
   text-decoration: none;
   color: black;
   background-color: white;
@@ -35,169 +52,132 @@
   border-radius: 5%;
   transition: all .2s ease;
 }
-.container nav ul li a:hover {
-  background-color: var(--red);
-  border-radius: 50%;
-}
-
-.logo {
-  max-width: 200px;
-  height: auto;
-  padding: 1.5em;
-}
 
 .redes {
+  height: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
-  max-width: 50px;
-  font-size: 40px;
+  justify-content: flex-end;
+  font-size: 2rem;
   cursor: pointer;
-  padding: 1.8em;
-  margin: 1em;
+  margin-top: 3rem;
+  padding-right: 1.5rem ;
 }
 
+.what {
+  color: green;
+}
+.face {
+  color: rgb(13, 13, 221);
+}
 .insta {
   margin: 0.5em;
-}
-.face:hover {
-  font-size: 1.5em;
-  color: blue;
-}
-.insta:hover {
-  font-size: 1.5em;
-  color: orange;
-}
-.what:hover {
-  font-size: 1.5em;
-  color: greenyellow;
-}
+  color: rgb(203, 136, 11);
 }
 
-@media (max-width: 1400px) {
+@media (min-width: 700px) and (max-width: 1024px) {
   .container {
+    flex-direction:row;
+    height: 20rem;
+  }
+  .containerLogo{
     width: 100%;
-    position: fixed;
-    /* height: 20vh; */
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    background-color: black;
-    font-size: 1.5em;
-  
-    color: white;
-    margin-bottom: 1.2em;
-    /* padding: 2em; */
-    
-    z-index: 1000
-  }
-  
-  .container nav ul {
-    display: flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
   }
-  .container nav li {
+  .logo {
+    width: 7rem;
+    height: auto;
+    margin: 0;
+  }
+  
+  .containerNav{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .containerNav nav ul {
+    margin: 1rem;
+  }
+  .containerNav nav li {
     list-style-type: none;
     padding: 0.6em;
-    font-size: 1.4rem;
-  }
-  .container nav li a {
-    text-decoration: none;
-    color: black;
-    background-color: white;
-    padding: 0.5em 1em;
-    font-family: wallpoet;
-    border-radius: 5%;
-    transition: all .2s ease;
-  }
-  .container nav ul li a:hover {
-    background-color: var(--red);
-    border-radius: 50%;
-  }
-  
-  .logo {
-    max-width: 200px;
-    height: auto;
-    padding: 1.5em;
+    font-size: 1rem;
   }
   
   .redes {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    max-width: 50px;
-    font-size: 40px;
+    width: 100%;
+    justify-content: center;
+    font-size: 2.3rem;
     cursor: pointer;
-    padding: 1.8em;
-    margin: 1em;
+    margin: 0 0 1rem 0;
+    padding: 0;
   }
-  
-  .insta {
-    margin: 0.5em;
-  }
-  .face:hover {
-    font-size: 1.5em;
-    color: blue;
-  }
-  .insta:hover {
-    font-size: 1.5em;
-    color: orange;
-  }
-  .what:hover {
-    font-size: 1.5em;
-    color: greenyellow;
-  }
-  }
-/* @media (max-width: 700px) {
-  .container{
-    display: flex;
-  }
-  .containerLogo{
+}
+  @media (min-width: 1024px) {
+    .container {
+      width: 100%;
+      height: 20rem;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      align-items: center;
+      padding: 1rem;
+      background-size: cover;
+      background-position: 0rem;
+      margin-top: -2rem;
+    }
+    .containerLogo{
+      display: flex;
+      margin: 1rem 0 2rem 0;
+    }
+    .logo {
+      width: 10rem;
+      height: auto;
+      margin: 0;
+    }
     
-  }
-  .container nav ul {
-    flex-direction: column;
-    margin: 1em;
-  }
-  .container nav li {
-    list-style-type: none;
-    padding: .4em;
-    font-size: 1.1rem;
-    margin: 0.3em;
-  }
+    .container nav ul {
+      flex-direction: row;
+      padding-top: 4rem;
+    }
+    .container nav li {
+      font-size: 1.1rem;
+    }
 
-  .logo {
-    max-width: 180px;
-    height: auto;
-    padding: 1.5em;
-  }
-  .redes{
-    flex-direction: column;
-    max-width: 50px;
-    font-size: 40px;
-    cursor: pointer;
-    padding: 1.2em;
-    margin: .8em;
-    transition: all 2s ease;
-  }
-  .insta {
-    margin: 0.2em;
-  }
-} */
+    .container nav ul li a:hover {
+      background-color: var(--red);
+      border-radius: 50%;
+    }
+    .redes {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-items: center;
+      cursor: pointer;
+      font-size: 1.4em;
+      margin: 0 0 1rem 0;
+      padding: 0.5rem 0 0.5rem 0;
+    }
 
-/* @media (max-width: 1750px) {
-  
-  .redes{
-    flex-direction: column;
-    max-width: 50px;
-    font-size: 40px;
-    cursor: pointer;
-    padding: 1.2em;
-    margin: .8em;
-    transition: all .3s ease;
-  }
-  .insta {
-    margin: 0.2em;
-  }
-} */
+    .face .insta .what {
+      color: white;
+    }
+    
+    .face:hover {
+      font-size: 1.5em;
+      color: blue;
+    }
+    .insta:hover {
+      font-size: 1.5em;
+      color: orange;
+    }
+    .what:hover {
+      font-size: 1.5em;
+      color: greenyellow;
+    }
+    } 
+

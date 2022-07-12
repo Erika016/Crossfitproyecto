@@ -1,43 +1,69 @@
 .container {
-  width: 100%;
-  height: auto;
-  border: 2px #eee solid;
-  display: block;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: 2rem;
+  margin: auto;
+}
+
+.containerContactInfo{
+  width: 100%;
+  border: 2px #eee solid;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  padding: 3rem;
 }
 .titulo{
     font-family: wallpoet;
 }
 .container h1{
-    font-size: 3em;
+    font-size: 1.6rem;
+    margin-top: 1rem;
 }
 .container label {
+  font: bold;
   color: brown;
-  font-size: 2.5em;
+  font-size: 1.5rem;
 }
 .container p{
-    font-size: 1.8em;
-    padding: .5em;
+    font-size: 1.1em;
+    padding: 0.5em;
 }
+.imagenContainer{
+  width: 100%;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
 .imagen{
-    width: 780px;
-    height: 540px;
+  width: 100%;
     padding-top: 2em;
 }
 
-@media (max-width: 576px){
-  .imagen{
-    max-width: 320px;
-    max-height: 300px;
+@media (min-width: 700px) and (max-width: 1024px) { 
 
+  .container h1{
+      font-size: 2rem;
+  }
+  .container label {
+    font-size: 1.9rem;
+  }
+  .container p{
+      font-size: 1.6em;
   }
 }
-@media (max-width: 900px){
-  .imagen{
-    max-width: 460px;
-    max-height: 400px;
 
-  }
+@media (min-width: 1024px) {
+  .container h1{
+    font-size: 2.4rem;
+}
+.container label {
+  font-size: 2.2rem;
+}
+.container p{
+    font-size: 1.8rem;
+}
 }

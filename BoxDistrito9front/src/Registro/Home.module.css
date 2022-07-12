@@ -29,17 +29,23 @@
 
 @keyframes over-and-back {
   0% {
-    transform: translate(-25px);
+    transform: translate(-20px);
   }
   50% {
-    transform: translate(25px);
+    transform: translate(0);
   }
   100% {
-    transform: translate(-25px);
+    transform: translate(-20px);
   }
 }
 .cards {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media (max-width: 1024px) {
+  .cards {
+    width: 100%;
+  }
 }

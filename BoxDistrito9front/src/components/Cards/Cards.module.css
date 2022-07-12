@@ -11,8 +11,8 @@
   border-top-right-radius: 10px;
 }
 .containerImage{
-  width: 360px;
-  height: 340px;
+  width: 240px;
+  height: 220px;
 }
 
 .image {
@@ -32,7 +32,10 @@
 
 }
 .containerInformacion h1{
-  margin: .5em;
+    margin: 1.3rem;
+    color: rgb(164, 8, 8);
+    font-size: 1.8rem;
+    font-family: wallpoet;
 }
 
 .boton {
@@ -46,4 +49,10 @@
 }
 .boton:hover{
   box-shadow: 0 0.1rem 0.4rem rgba(0, 0, 0, 3);
+}
+@media (min-width: 1024px) {
+  .containerImage{
+  width: 340px;
+  height: 320px;
+}
 }

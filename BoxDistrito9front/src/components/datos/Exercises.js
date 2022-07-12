@@ -19,17 +19,23 @@ export function Exercises(props) {
 
   return (
     <div className={classes.container}>
+      <div className={classes.imageContainer}>
+        <h1>Ejercicios</h1>
+      </div>
       <div className={classes.bloque}>
         {exercises.map((exercise) => {
           return (
+            <div className={classes.containerLi}>
             <li className={classes.li} key={exercise.id_exercise}>
-              <p className={classes.nombre}>{exercise.name}</p>
-              <p className={classes.descripcion}>{exercise.description}</p>
+              <p className={classes.name}>{exercise.name}</p>
+              <p className={classes.description}>{exercise.description}</p>
             </li>
+            </div>
           );
         })}
-      
+      <div className={classes.botonContainer}>
           <Link className={classes.boton} to="/dashboard">Volver</Link>
+          </div>
       </div>
     </div>
   );

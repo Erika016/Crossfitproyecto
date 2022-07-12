@@ -1,4 +1,3 @@
-
 .container {
   width: 100%;
   height: auto;
@@ -16,7 +15,7 @@
   margin-top: -1rem;
 }
 
-.containerLogo{
+.containerLogo {
   display: flex;
   justify-content: left;
   align-items: left;
@@ -27,7 +26,7 @@
   margin: 1.5rem 0 0 2rem;
 }
 
-.containerNav{
+.containerNav {
   display: flex;
   flex-direction: column;
 }
@@ -50,7 +49,7 @@
   padding: 0.5em 1em;
   font-family: wallpoet;
   border-radius: 5%;
-  transition: all .2s ease;
+  transition: all 0.2s ease;
 }
 
 .redes {
@@ -59,12 +58,33 @@
   flex-direction: row;
   align-items: center;
   justify-content: flex-end;
-  font-size: 2rem;
+  font-size: 1.5rem;
   cursor: pointer;
   margin-top: 3rem;
-  padding-right: 1.5rem ;
+  padding-right: 1.5rem;
+  padding-bottom: 1rem;
 }
-
+.icon {
+  border-radius: 50%;
+  background-color: white;
+  padding: 0.5em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #282828;
+  transition-duration: 0.5s;
+  margin: .2em;
+}
+.icon:hover,
+.icon:focus,
+.icon:active {
+  background-color: #2098d1;
+  color: white;
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  -webkit-transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+  transition-timing-function: cubic-bezier(0.47, 2.02, 0.31, -0.36);
+}
 .what {
   color: green;
 }
@@ -78,10 +98,10 @@
 
 @media (min-width: 700px) and (max-width: 1024px) {
   .container {
-    flex-direction:row;
+    flex-direction: row;
     height: 20rem;
   }
-  .containerLogo{
+  .containerLogo {
     width: 100%;
     justify-content: center;
     align-items: center;
@@ -91,14 +111,14 @@
     height: auto;
     margin: 0;
   }
-  
-  .containerNav{
+
+  .containerNav {
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
   }
-  
+
   .containerNav nav ul {
     margin: 1rem;
   }
@@ -107,77 +127,77 @@
     padding: 0.6em;
     font-size: 1rem;
   }
-  
+
   .redes {
     width: 100%;
     justify-content: center;
+    flex-direction: column;
     font-size: 2.3rem;
     cursor: pointer;
     margin: 0 0 1rem 0;
     padding: 0;
   }
 }
-  @media (min-width: 1024px) {
-    .container {
-      width: 100%;
-      height: 20rem;
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      align-items: center;
-      padding: 1rem;
-      background-size: cover;
-      background-position: 0rem;
-      margin-top: -2rem;
-    }
-    .containerLogo{
-      display: flex;
-      margin: 1rem 0 2rem 0;
-    }
-    .logo {
-      width: 10rem;
-      height: auto;
-      margin: 0;
-    }
-    
-    .container nav ul {
-      flex-direction: row;
-      padding-top: 4rem;
-    }
-    .container nav li {
-      font-size: 1.1rem;
-    }
+@media (min-width: 1024px) {
+  .container {
+    width: 100%;
+    height: 20rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    background-size: cover;
+    background-position: 0rem;
+    margin-top: -2rem;
+  }
+  .containerLogo {
+    display: flex;
+    margin: 1rem 0 2rem 0;
+  }
+  .logo {
+    width: 10rem;
+    height: auto;
+    margin: 0;
+  }
 
-    .container nav ul li a:hover {
-      background-color: var(--red);
-      border-radius: 50%;
-    }
-    .redes {
-      display: flex;
-      flex-direction: column;
-      justify-content: space-between;
-      align-items: center;
-      cursor: pointer;
-      font-size: 1.4em;
-      margin: 0 0 1rem 0;
-      padding: 0.5rem 0 0.5rem 0;
-    }
+  .container nav ul {
+    flex-direction: row;
+    padding-top: 4rem;
+  }
+  .container nav li {
+    font-size: 1.1rem;
+  }
 
-    .face .insta .what {
-      color: white;
-    }
-    
-    .face:hover {
-      font-size: 1.5em;
-      color: blue;
-    }
-    .insta:hover {
-      font-size: 1.5em;
-      color: orange;
-    }
-    .what:hover {
-      font-size: 1.5em;
-      color: greenyellow;
-    }
-    } 
+  .container nav ul li a:hover {
+    background-color: var(--red);
+    border-radius: 50%;
+  }
+  .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    font-size: 1.4em;
+    margin: 0 0 1rem 0;
+    padding: 0.5rem 0 0.5rem 0;
+  }
 
+  .face .insta .what {
+    color: white;
+  }
+
+  .face:hover {
+    font-size: 1.5em;
+    color: blue;
+  }
+  .insta:hover {
+    font-size: 1.5em;
+    color: orange;
+  }
+  .what:hover {
+    font-size: 1.5em;
+    color: greenyellow;
+  }
+}

@@ -13,9 +13,9 @@ import { Link } from "react-router-dom";
 import { useSelector } from "react-redux";
 import { useDispatch } from "react-redux";
 import { loginActions } from "../../store/loginSlice";
-import { ImFacebook2 } from "react-icons/im";
-import { ImInstagram } from "react-icons/im";
-import { ImWhatsapp } from "react-icons/im";
+import { FaFacebookF } from "react-icons/fa";
+import { FaTwitter } from "react-icons/fa";
+import { FaInstagram } from "react-icons/fa";
 
 function Header() {
   const dispatch = useDispatch();
@@ -28,42 +28,42 @@ function Header() {
   return (
     <header className={classes.container}>
       <div className={classes.containerLogo}>
-      <img className={classes.logo} alt="test" src={logo} />
+        <img className={classes.logo} alt="test" src={logo} />
       </div>
       <div className={classes.containerNav}>
-      <nav>
-        <ul>
-          <li>
-            <Link to="/">Inicio</Link>
-          </li>
-          <li>
-            <Link to="/tarifasHorarios">Tarifa y Horarios</Link>
-          </li>
-          <li>
-            <Link to="/contactolocalizacion">Contacto/Localización</Link>
-          </li>
-          <li>
-            {!logged && <Link to={"/login"}>Iniciar sesión</Link>}
-            {logged && (
-              <Link to={"/login"} onClick={handleLogOut}>
-                Cerrar sesión
-              </Link>
-            )}
-          </li>
+        <nav>
+          <ul>
+            <li>
+              <Link to="/">Inicio</Link>
+            </li>
+            <li>
+              <Link to="/tarifasHorarios">Tarifa y Horarios</Link>
+            </li>
+            <li>
+              <Link to="/contactolocalizacion">Contacto/Localización</Link>
+            </li>
+            <li>
+              {!logged && <Link to={"/login"}>Iniciar sesión</Link>}
+              {logged && (
+                <Link to={"/login"} onClick={handleLogOut}>
+                  Cerrar sesión
+                </Link>
+              )}
+            </li>
 
-          <li>{logged && <Link to={"/dashboard"}>Area Usuario</Link>}</li>
-        </ul>
-      </nav>
+            <li>{logged && <Link to={"/dashboard"}>Area Usuario</Link>}</li>
+          </ul>
+        </nav>
       </div>
       <div className={classes.redes}>
-        <div className={classes.face}>
-          <ImFacebook2 />
+        <div className={classes.icon}>
+          <FaFacebookF />
         </div>
-        <div className={classes.insta}>
-          <ImInstagram />
+        <div className={classes.icon}>
+          <FaTwitter />
         </div>
-        <div className={classes.what}>
-          <ImWhatsapp />
+        <div className={classes.icon}>
+          <FaInstagram />
         </div>
       </div>
     </header>

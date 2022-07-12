@@ -39,15 +39,17 @@ export const Login = (props) => {
     });
   };
   return (
-    <div >
+    <div>
       {logged && <Navigate to="/dashboard" replace={true} />}
       {loading && <Spinner />}
-      {status === "failed" && <Alert message="Error en el registro" />}
+      {user.status === "failed" && (
+        <Alert message="Error en el registro" type="error" />
+      )}
 
       {!loading && (
-        <div >
-            {/* <h1 >BOX DISTRITO9</h1> */}
-            <h2 className={classes.titulo}>Iniciar Sesion</h2>
+        <div>
+          {/* <h1 >BOX DISTRITO9</h1> */}
+          <h2 className={classes.titulo}>Iniciar Sesion</h2>
           <div className={classes.login}>
             <form className={classes.contactform} onSubmit={handleSubmit}>
               <label className={classes.labels} htmlFor="email">
@@ -76,9 +78,7 @@ export const Login = (props) => {
               />
 
               <div className={classes.links}>
-                <Link  to="/register">
-                  ¿No estás registrado?
-                </Link>
+                <Link to="/register">¿No estás registrado?</Link>
               </div>
               <div>
                 <button type="submit" className={classes.boton}>

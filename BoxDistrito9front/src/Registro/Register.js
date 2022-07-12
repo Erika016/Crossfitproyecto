@@ -12,6 +12,7 @@ import { Alert } from "../components/alert/Alert";
 export const Register = () => {
   const dispatch = useDispatch();
   const user = useSelector((state) => state.login.login.data);
+  console.log(user) 
   const loading = useSelector((state) => state.login.login.loading);
   const status = useSelector((state) => state.login.status);
   const error = useSelector((state) => state.login.error);
@@ -53,8 +54,9 @@ export const Register = () => {
   return (
     <div className={classes.contenedor}>
       {loading && <Spinner />}
-      {status === "succeeded" && <Alert message="Registro correcto" />}
-      {status === "failed" && <Alert message="Error en el registro" />}
+      {user.status === "succeeded" && <Alert message="Registro correcto" type="success"/>}
+      {user.status === "failed" && <Alert message="Error en el registro" type="error"/>}
+      {status === "rejected" && <Alert message={error.message} type="error"/>}
       <div className={classes.datos}>
         {/* <h1>BOX DISTRITO9</h1> */}
         <h2 className={classes.titulo}>Registrarse</h2>

@@ -6,13 +6,12 @@ import { useSelector } from "react-redux";
 import { Link } from "react-router-dom";
 import { Spinner } from "../components/spinner/Spinner";
 import { Navigate } from "react-router-dom";
-import perfil from "../components/info/imagenInfo/perfil1.jpeg"
+import perfil from "../components/info/imagenInfo/perfil1.jpeg";
 
 export const Dashboard = () => {
   const user = useSelector((state) => state.login.login.data.info);
   const loading = useSelector((state) => state.login.login.loading);
   const logged = useSelector((state) => state.login.login.isLogged);
-
 
   return (
     <div className={classes.container}>
@@ -23,56 +22,54 @@ export const Dashboard = () => {
         </div>
       )}
       {!loading && user && (
-        <div>
-          <h1 className={classes.titulo}>Mi Perfil</h1>
-        <div className={classes.profile}>
-        
-          <img className={classes.photo} alt="test" src={perfil} />
-
-          <div className={classes.dates}>
-            <p>
-              <b>Nombre: </b> {user.name}{" "}
-            </p>
-            <p>
-              <b>Apellidos:</b> {user.last_name}
-            </p>
-            <p>
-              <b>Fecha de nacimiento:</b> {user.birth_date}
-            </p>
-            <p>
-              <b>Teléfono:</b> {user.phone}
-            </p>
-            <p>
-              <b>Email:</b> {user.email}
-            </p>
-            <p>
-              <b>Nº Sesiones:</b> {user.sessions}
-            </p>
+        <div className={classes.containerProfile}>
+          <div className={classes.tituloProfile}>
+            <h1 className={classes.titulo}>Mi Perfil</h1>
           </div>
+          <div className={classes.profile}>
+            <img className={classes.photo} alt="test" src={perfil} />
 
-          <div>
-            <div>
-              <Link className={classes.buttons} to={"/perfil"}>
-                Actualizar Perfil
-              </Link>
+            <div className={classes.dates}>
+              <p>
+                <b>Nombre: </b> {user.name}{" "}
+              </p>
+              <p>
+                <b>Apellidos:</b> {user.last_name}
+              </p>
+              <p>
+                <b>Fecha de nacimiento:</b> {user.birth_date}
+              </p>
+              <p>
+                <b>Teléfono:</b> {user.phone}
+              </p>
+              <p>
+                <b>Email:</b> {user.email}
+              </p>
+              <p>
+                <b>Nº Sesiones:</b> {user.sessions}
+              </p>
             </div>
-            <div>
-              <Link className={classes.buttons} to={"/searchWeight"}>
-                Registrar Pesos Ejercicios
-              </Link>
-            </div>
-            <div>
-              <Link className={classes.buttons} to={"/exercises"}>
-                Ejercicios
-              </Link>
 
+            <div className={classes.containerButtons}>
+              <div className={classes.buttons}>
+                <Link className={classes.textoBoton} to={"/perfil"}>
+                  Actualizar Perfil
+                </Link>
+              </div>
+              <div className={classes.buttons}>
+                <Link className={classes.textoBoton} to={"/searchWeight"}>
+                  Registrar Pesos
+                </Link>
+              </div>
+              <div className={classes.buttons}>
+                <Link className={classes.textoBoton} to={"/exercises"}>
+                  Ejercicios
+                </Link>
+              </div>
             </div>
           </div>
-        </div>
         </div>
       )}
     </div>
   );
 };
-
-
